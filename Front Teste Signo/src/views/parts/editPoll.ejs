@@ -1,0 +1,76 @@
+<head>
+    <link rel="stylesheet" href="/styles/editPoll.css">
+    <script defer src="/scripts/modules/editOrDeletePoll.js"></script>
+
+    <title>Editar enquete</title>
+</head>
+
+<div id="infoPoll">
+    <p>Título da enquete <br> <span id="titlePoll"></span></p>
+    <p>ID da enquete <br> <span id="idPoll"></span></p>
+    <p>Data de início da enquete <br> <span id="startPoll"></span></p>
+    <p>Data de encerramento da enquete <br> <span id="endPoll"></span></p>
+</div>
+
+
+<div class="createResponse">
+    <div id="container">
+        <div id="userArea">
+            <section class="title">
+                <p id="messageError"></p>
+
+                <p>Editar enquete</p>
+            </section>
+
+            <form name="formuser" action="javascript: NewOptionsPoll()" method="post">
+                <section id="inputs">
+                    <label for="">Opção 1</label>
+                    <input type="text" name="option" id="option1" placeholder="Opção 1" required>
+                    <label for="">Opção 2</label>
+                    <input type="text" name="option" id="option2" placeholder="Opção 2" required>
+                    <label for="">Opção 3</label>
+                    <input type="text" name="option" id="option3" placeholder="Opção 3" required>
+                </section>
+            </form>
+
+            <section class="buttons">
+                <button name="button" id="buttonRemove">    
+                    <span class="material-symbols-outlined">
+                        do_not_disturb_on
+                    </span>
+                </button>
+
+                <button name="button" id="buttonAdd">
+                    <span class="material-symbols-outlined">
+                        add_circle
+                    </span>
+                </button>
+                    
+                <button id="buttonDelete">
+                    Deletar
+                </button>
+                
+                <input type="submit" name="submit" id="buttonSend" value="Editar">
+            </section>
+        </div>
+
+        <div id="pollinvalid" style="display: none;">
+            <p>Essa enquete já expirou ou não existe mais!</p>
+            <a href="/home">Voltar</a>
+        </div>
+
+        <div id="alertDelete" style="display: none;">
+            <p>
+                Você tem certeza que deseja excluir sua enquete permanentemente?
+            </p>
+
+            <div class="buttonsAlert">
+                <a id="alertDeleteFalse">Cancelar</a>
+                <a id="alertDeleteTrue">Sim, DELETAR</a>
+            </div>
+            
+        </div>
+    </div>
+
+    
+</div>

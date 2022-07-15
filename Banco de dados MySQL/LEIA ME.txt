@@ -1,0 +1,1 @@
+Existem dois arquivos do Banco de dados, nos quais cada um foi exportado de maneira diferente...  É aconselhável usar o arquivo "database.sql". Caso ocorra algum bug, use a segunda opção.

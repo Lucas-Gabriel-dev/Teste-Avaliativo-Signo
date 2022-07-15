@@ -1,0 +1,33 @@
+<head>
+    <link rel="stylesheet" href="/styles/createPoll.css">
+    <script defer src="/scripts/modules/createPoll.js"></script>
+
+    <title>Criar enquete</title>
+</head>
+
+<div class="createResponse">
+    <div id="container">
+        <div class="userArea">
+            <h1 class="title">Criar enquete</h1>
+
+            <p id="messageError"></p>
+
+            <form name="formuser" action="javascript: CreatePoll()" method="post">
+                <label for="">Título da enquete</label><br>
+                <input type="text" name="title" id="titlePoll" placeholder="Título" required><br>
+                <label for="">Data de início</label><br>
+                <input type="date" name="date" id="startDate" required><br>
+                <label for="">Data de conclusão</label><br>
+                <input type="date" name="date" id="endDate" required><br>
+                <input type="submit" name="submit" id="buttonSend" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+    <div id="errorMessage" style="display: none;">
+        <p>Você não está logado!!</p>
+        <a href="/login">Login / Registre-se</a> 
+    </div>
+</div>
+
+    

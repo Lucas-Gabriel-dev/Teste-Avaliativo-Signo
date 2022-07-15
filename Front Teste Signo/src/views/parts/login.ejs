@@ -1,0 +1,26 @@
+<head>
+    <link rel="stylesheet" href="/styles/login.css">
+    <script defer src="/scripts/modules/login.js"></script>
+
+    <title>Logar-se</title>
+</head>
+
+<div class="login">
+    <div id="container">
+        <div class="userArea">
+            <h1 class="title">Entrar na conta</h1>
+
+            <p id="messageError"></p>
+
+            <form name="formuser" action="javascript: LogIn()" method="post">
+                <input type="email" name="email" id="userEmail" placeholder="E-mail" required><br>
+                <input type="password" name="password" id="userPassword" placeholder="Senha" required><br>
+                <input type="submit" id="buttonLogin" value="Entrar">
+            </form>
+
+            Não tem conta? <a href="/register" class="buttonRegister">Cadastre-se</a>
+        </div>
+    </div>
+
+    
+</div>
