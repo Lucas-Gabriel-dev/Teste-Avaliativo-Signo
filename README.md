@@ -21,3 +21,12 @@
 <h2> Node.js </h2>
 
 <p> Ferramenta que foi utilizada no BackEnd, onde a mesma, oferece diversos recursos e pacotes. Um dos pacotes utilizados na aplilcação foi o express. </p>
+
+<h1> Dependências (Importante) </h1>
+<h2> Os pacotes mencionados abaixo não vem instalados por padrão no projeto, sendo assim podem existir complicações ao tentar iniciar o projeto sem eles.
+
+<h2> BackEnd </h2>
+<p> Para iniciar o servidor BackEnd é necessário utilizar o pacote "ts-node-dev". Logo em seguida basta usar "yarn dev" ou "npm run dev" para iniciar o servidor.  </p>
+
+<h2> FrontEnd </h2>
+<p> Para iniciar o servidor FrontEnd é necessário utilizar o pacote "nodemon". Logo em seguida basta usar "yarn dev" ou "npm run dev" para iniciar o servidor. </p>
